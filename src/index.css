@@ -1,0 +1,78 @@
+:root {
+  --bg-deep: #070b14;
+  --bg-base: #0b1026;
+  --bg-surface: #121a35;
+  --bg-elevated: #1a2447;
+  --bg-hover: #222d55;
+  --border: rgba(0, 245, 212, 0.12);
+  --border-strong: rgba(0, 245, 212, 0.28);
+  --text: #f0f4ff;
+  --text-muted: #8b9dc9;
+  --text-dim: #5a6d99;
+  --primary: #00f5d4;
+  --primary-dim: rgba(0, 245, 212, 0.15);
+  --secondary: #ff006e;
+  --secondary-dim: rgba(255, 0, 110, 0.15);
+  --accent: #b388ff;
+  --accent-dim: rgba(179, 136, 255, 0.15);
+  --gold: #ffd60a;
+  --success: #00e676;
+  --warning: #ffab40;
+  --danger: #ff5252;
+  --gradient-hero: linear-gradient(135deg, #00f5d4 0%, #b388ff 50%, #ff006e 100%);
+  --gradient-card: linear-gradient(145deg, rgba(0, 245, 212, 0.08) 0%, rgba(179, 136, 255, 0.06) 100%);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 40px rgba(0, 245, 212, 0.12);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+  --font: 'Outfit', system-ui, sans-serif;
+  --font-display: 'Syne', 'Outfit', sans-serif;
+  --sidebar-w: 260px;
+  --header-h: 64px;
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg-deep);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { min-height: 100vh; }
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--bg-hover); border-radius: 3px; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 245, 212, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(0, 245, 212, 0.4); }
+}
+
+.animate-in { animation: fadeIn 0.35s ease forwards; }

@@ -1,0 +1,42 @@
+.frequency-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.frequency-page h3 { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 16px; }
+.frequency-table-wrap { overflow-x: auto; }
+.frequency-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.frequency-table th {
+  text-align: left;
+  padding: 10px 14px;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+.frequency-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+.frequency-student { display: flex; align-items: center; gap: 10px; }
+.frequency-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--primary-dim);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.frequency-recent { margin-top: 20px; }
+.frequency-list { list-style: none; }
+.frequency-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.frequency-list li strong { display: block; font-size: 0.9rem; }
+.frequency-list li span { font-size: 0.8rem; color: var(--text-dim); }

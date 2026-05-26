@@ -1,0 +1,55 @@
+.agenda-empty { text-align: center; padding: 48px; color: var(--text-dim); }
+.agenda-empty svg { color: var(--accent); margin-bottom: 12px; }
+.agenda-timeline { display: flex; flex-direction: column; gap: 24px; }
+.agenda-day__header { margin-bottom: 12px; }
+.agenda-day__date {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary);
+  text-transform: capitalize;
+}
+.agenda-event {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+.agenda-event:hover { border-color: var(--border-strong); }
+.agenda-event__time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+.agenda-event__sep { color: var(--text-dim); font-size: 0.7rem; }
+.agenda-event__content { flex: 1; }
+.agenda-event__content h4 { font-size: 1rem; margin-bottom: 4px; }
+.agenda-event__content p { font-size: 0.85rem; color: var(--text-muted); }
+.agenda-event__notes { font-style: italic; margin-top: 4px; }
+.agenda-event__actions { display: flex; gap: 4px; }
+.agenda-students-select { margin-top: 16px; }
+.agenda-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.agenda-chip {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-base);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+.agenda-chip--active {
+  background: var(--primary-dim);
+  border-color: var(--primary);
+  color: var(--primary);
+}

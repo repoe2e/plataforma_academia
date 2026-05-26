@@ -1,0 +1,27 @@
+.notifications-list { display: flex; flex-direction: column; gap: 10px; }
+.notification-item {
+  display: flex !important;
+  gap: 14px;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 18px !important;
+}
+.notification-item--unread {
+  border-color: var(--primary) !important;
+  background: var(--primary-dim) !important;
+}
+.notification-item__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-dim);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+.notification-item--unread .notification-item__dot {
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+}
+.notification-item h4 { font-size: 0.95rem; margin-bottom: 4px; }
+.notification-item p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+.notification-item time { font-size: 0.75rem; color: var(--text-dim); margin-top: 6px; display: block; }

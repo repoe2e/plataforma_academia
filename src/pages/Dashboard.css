@@ -1,0 +1,111 @@
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.dashboard__card h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+.dashboard__empty { color: var(--text-dim); font-size: 0.9rem; }
+.dashboard__list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.dashboard__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: var(--bg-base);
+  border-radius: var(--radius-sm);
+}
+.dashboard__list li strong { display: block; font-size: 0.9rem; }
+.dashboard__list li span { font-size: 0.8rem; color: var(--text-dim); }
+.dashboard__list-date {
+  font-size: 0.75rem !important;
+  color: var(--primary) !important;
+  font-weight: 600;
+  min-width: 70px;
+}
+.dashboard__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.dashboard__link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+.dashboard__link:hover { text-decoration: underline; }
+
+.dashboard__quick h3 { font-size: 1rem; margin-bottom: 12px; color: var(--text-muted); }
+.dashboard__quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+.quick-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.quick-action:hover {
+  border-color: var(--primary);
+  background: var(--primary-dim);
+  color: var(--primary);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.dashboard__workout-name { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+.dashboard__workout-desc { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px; }
+.dashboard__exercises-mini { list-style: none; font-size: 0.85rem; color: var(--text-muted); }
+.dashboard__exercises-mini li { padding: 4px 0; border-bottom: 1px solid var(--border); }
+.dashboard__chart-card { min-height: 280px; }
+
+.dashboard__checkin-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background: var(--gradient-hero);
+  border-radius: var(--radius);
+  color: var(--bg-deep);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: var(--transition);
+  animation: pulse-glow 3s ease infinite;
+}
+.dashboard__checkin-cta:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+}

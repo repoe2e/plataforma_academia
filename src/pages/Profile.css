@@ -1,0 +1,34 @@
+.profile-card {
+  max-width: 480px;
+  text-align: center;
+  padding: 32px !important;
+}
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: var(--gradient-hero);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-deep);
+}
+.profile-role {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.profile-save { width: 100%; }
