@@ -1,3 +1,4 @@
+# Publica o build (dist/) em https://repoe2e.github.io/plataforma_academia/
 name: Deploy GitHub Pages
 
 on:
