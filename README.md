@@ -66,3 +66,18 @@ Acesse `http://localhost:5173`
 npm run build
 npm run preview
 ```
+
+## GitHub Pages
+
+Site: https://repoe2e.github.io/plataforma_academia/
+
+O deploy é feito automaticamente via GitHub Actions ao dar push na branch `main`.
+
+**Configuração no GitHub (Settings → Pages):**
+- Source: **GitHub Actions** (não "Deploy from branch")
+
+Build local para Pages:
+
+```bash
+set GITHUB_PAGES=true&& npm run build
+```
